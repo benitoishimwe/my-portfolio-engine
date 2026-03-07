@@ -65,7 +65,7 @@ const Hero = () => {
                     <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-[400px] lg:h-[400px]">
                         <div className="absolute inset-0 border-2 border-primary rounded-2xl md:rounded-[2rem] transform translate-x-4 translate-y-4 md:translate-x-6 md:translate-y-6 -z-10 transition-transform hover:translate-x-2 hover:translate-y-2" />
                         <img
-                            src="/profile.jpg"
+                            src={import.meta.env.BASE_URL + "profile.jpg"}
                             alt="ISHIMWE Benito"
                             className="object-cover w-full h-full rounded-2xl md:rounded-[2rem] shadow-2xl transition-all duration-500 bg-muted filter grayscale hover:grayscale-0"
                         />
