@@ -20,7 +20,7 @@ const Hero = () => {
 
                     <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] xl:text-[6rem] font-bold tracking-tighter text-foreground leading-tight md:leading-[1.1]">
                         ISHIMWE Benito.<br />
-                        <span className="text-primary text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Senior Software Engineer.</span>
+                        <span className="text-primary text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Software Engineer.</span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mt-6">
