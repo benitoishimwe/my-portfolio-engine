@@ -4,9 +4,9 @@ import { SiteConfig } from "./types";
 export const siteConfig: SiteConfig = {
   name: "Benito",
   fullName: "ISHIMWE Benito",
-  title: "Senior Software Engineer",
+  title: "Backend & Cloud Engineer",
   description:
-    "Portfolio of ISHIMWE Benito, Senior Software Engineer specializing in cloud engineering, full-stack development, and technical leadership.",
+    "Portfolio of ISHIMWE Benito, Backend & Cloud Engineer specializing in cloud engineering, full-stack development, and technical leadership.",
   email: "benishimwe31@gmail.com",
   baseUrl: "https://engr-benitoishimwe.github.io/my-portfolio-engine/",
   resumeUrl: import.meta.env.BASE_URL + "resume.pdf",

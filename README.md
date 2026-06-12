@@ -1,58 +1,78 @@
-# Benito Ishimwe - Senior Software Engineer Portfolio
+# Benito Ishimwe — Portfolio
 
-Welcome to my personal developer portfolio repository! This project showcases my experience, skills, and the projects I've built throughout my career as a Full-Stack and Cloud Engineer.
+Personal portfolio showcasing backend engineering, cloud infrastructure, and full-stack projects.
 
-## Live Demo
+[![Live Site](https://img.shields.io/badge/Live%20Site-benitoishimwe.github.io-brightgreen)](https://benitoishimwe.github.io/my-portfolio-engine/)
 
-*Add your live URL here (e.g., https://benito-portfolio.vercel.app)*
+---
 
-## 🚀 Overview
+## Tech Stack
 
-This portfolio is built with modern web technologies to ensure a fast, accessible, and premium user experience. It features a dark-mode first design with emerald accents, smooth scroll animations, and a responsive layout.
+- **React 18** + **TypeScript** — component-driven UI with full type safety
+- **Vite** — fast dev server and optimised production builds
+- **Tailwind CSS** — utility-first styling
+- **Framer Motion** — scroll-triggered and entrance animations
+- **shadcn/ui** — accessible Radix-based component library
+- **GitHub Pages** — static hosting via the `gh-pages` package
 
-### Sections Included:
-- **Hero:** Introduction and call-to-actions.
-- **About:** My background spanning cloud engineering, backend development, and technical leadership.
-- **Experience:** A timeline of my professional history.
-- **Skills:** A categorized breakdown of my technical stack.
-- **Projects:** A grid showcasing my best work.
-- **Contact:** Links to get in touch.
+---
 
-## 🛠️ Tech Stack
+## Local Setup
 
-- **Framework:** React + Vite
-- **Styling:** Tailwind CSS
-- **Animations:** Framer Motion
-- **Icons:** Lucide React
-- **UI Components:** shadcn/ui
+```bash
+git clone https://github.com/benitoishimwe/my-portfolio-engine.git
+cd my-portfolio-engine
+npm install
+npm run dev        # starts dev server at http://localhost:5173
+```
 
-## 💻 Local Development
+---
 
-To run this project locally, follow these steps:
+## Build & Deploy
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/benitoishimwe/my-portfolio-engine.git
-   ```
+```bash
+npm run build      # outputs static files to dist/
+npm run deploy     # runs build then pushes dist/ to the gh-pages branch
+```
 
-2. **Navigate to the directory:**
-   ```bash
-   cd my-portfolio-engine
-   ```
+GitHub Pages serves the `gh-pages` branch automatically. The `homepage` field in `package.json` and the `base` option in `vite.config.ts` ensure assets resolve correctly under the `/my-portfolio-engine/` sub-path.
 
-3. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+---
 
-4. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
+## Project Structure
 
-5. Open `http://localhost:5173` (or the port specified in your terminal) in your browser.
+```
+src/
+  components/       # Page sections (Hero, About, Experience, Skills, Projects, Contact)
+  components/ui/    # shadcn/ui primitives (Button, Input, etc.)
+  data/             # Content data files — edit these to update portfolio content
+  hooks/            # Custom React hooks
+  pages/            # Route-level components (Index, NotFound)
+  lib/              # Utility helpers (cn, etc.)
+public/
+  profile.jpg       # Profile photo served at runtime
+  resume.pdf        # Résumé download
+index.html          # Entry HTML with meta tags and structured data
+```
 
-## 📬 Contact
+---
+
+## Customisation Guide
+
+| What to change | Where |
+|---|---|
+| Name, title, email, social links | `src/data/site-config.ts` |
+| Work experience entries | `src/data/experience.ts` |
+| Projects | `src/data/projects.ts` |
+| Skills / technology groups | `src/data/skills.ts` |
+| About section expertise cards | `src/data/about.ts` |
+| Page title, OG tags, structured data | `index.html` |
+| Profile photo | `public/profile.jpg` (replace in place) |
+| Résumé PDF | `public/resume.pdf` (replace in place) |
+
+---
+
+## Contact
 
 - **LinkedIn:** [benito-ishimwe](https://www.linkedin.com/in/benito-ishimwe/)
 - **GitHub:** [@benitoishimwe](https://github.com/benitoishimwe)

@@ -25,7 +25,7 @@ const Hero = () => {
             ISHIMWE Benito.
             <br />
             <span className="text-primary text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-              Senior Software Engineer.
+              Backend & Cloud Engineer.
             </span>
           </h1>
 
